@@ -1,0 +1,20 @@
+<h1>Goodbye!</h1>
+<p>
+  It was nice having you here.
+</p>
+
+<p>
+Say <%= link_to  "hello", say_hello_path %> again!
+</p>
+
+<p>
+  addition <%= 1 + 2 %>
+  <span>Concatenation: <%= "cow" + "boy" %></span>
+  <span>Time in one hour: <%= 1.hour.from_now.localtime %></span>
+</p>
+
+<ul>
+  <% @files.each do |file| %>
+    <li>file name is: <%= file %></li>
+  <% end %>
+</ul>
